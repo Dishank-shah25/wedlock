@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="static/css/style2.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+    <tr>
+        <td>email-address</td>
+        <td>password</td>
+        <td>re-password</td>
+        <td>profile seeking for</td>
+        <td>first name</td>
+        <td>last name</td>
+        <td>Mgender</td>
+        <td>Fgender</td>
+        <td>religion</td>
+        <td>mother-tounge</td>
+    </tr>
+    {% for i in allindex %}
+    <tr>
+        <td>{{ i.email }}</td>
+        <td>{{ i.password }}</td>
+        <td>{{ i.repassword }}</td>
+        <td>{{ i.person_select }}</td>
+        <td>{{ i.firstname }}</td>
+        <td>{{ i.lastname }}</td>
+        <td>{{ i.gender }}</td>
+        <td>{{ i.fgender }}</td>
+        <td>{{ i.religion }}</td>
+        <td>{{ i.language }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

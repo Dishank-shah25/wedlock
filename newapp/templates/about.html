@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+{% if personemail %}
+<body>
+<table>
+    <tr>
+        <td>email</td><td>{{ personemail }}</td>
+    </tr>
+     <tr>
+        <td>password</td><td>{{personpassword}}</td>
+    </tr>
+     <tr>
+        <td>repassword</td><td>{{personpass}}</td>
+    </tr>
+     <tr>
+        <td>select</td><td>{{personselect}}</td>
+    </tr>
+     <tr>
+        <td>first name</td><td>{{personfirstname}}</td>
+    </tr>
+     <tr>
+        <td>last name</td><td>{{personlastname}}</td>
+    </tr>
+     <tr>
+        <td>gender 1</td><td>{{persongender}}</td>
+    </tr>
+     <tr>
+        <td>gender 2</td><td>{{personfgender}}</td>
+    </tr>
+     <tr>
+        <td>religion</td><td>{{personreligion}}</td>
+    </tr>
+     <tr>
+        <td>language</td><td>{{personlamguage}}</td>
+    </tr>
+
+</table>
+{% else %}
+<h1>plese fill the form</h1>
+{% endif %}
+</body>
+</html>
